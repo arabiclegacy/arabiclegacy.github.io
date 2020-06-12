@@ -1,5 +1,5 @@
 this website interface has been powered by
-https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm#portfolio
+https://www.w3schools.com/w3css/
 
 and hosted by
 https://www.github.com
