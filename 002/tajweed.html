@@ -88,7 +88,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
 <div id="demo2"></div>
 <div id="demo3"></div>
 
-<embed id="DesktopView" src="../site_contents/01_01_tajweed/DLV_Tajweed.pdf"/> 
+<embed id="DesktopView" src="...."/> 
 
 
 <script>
@@ -100,6 +100,7 @@ document.getElementById("DesktopView").src = 'https://docs.google.com/viewer?url
 } else {
 var txt3 = "gfsdgfd";
 txt2 += "moi: I cannot see any Mobile2";
+document.getElementById("DesktopView").src = '../site_contents/01_01_tajweed/DLV_Tajweed.pdf';
 }
 document.getElementById("demo2").innerHTML = txt2;
 document.getElementById("demo3").innerHTML = txt3;
