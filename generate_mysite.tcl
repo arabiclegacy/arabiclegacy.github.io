@@ -16,9 +16,9 @@ set include_pages [list \
 
 set home_list [list MAIN_LIST \
 {
-    <a href="../PATH_TO_REF#root"    onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding ACTIVE_LIST_COLOR"><i class="fa fa-home     fa-fw w3-padding-small w3-margin-left w3-right"></i><div class="w3-right-align">الرئيسية</div> </a> 
-    <a href="../PATH_TO_REF#about"   onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding">                  <i class="fa fa-user     fa-fw w3-padding-small w3-margin-left w3-right"></i><div class="w3-right-align">مقدم المحتوى</div></a> 
-    <a href="../PATH_TO_REF#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding">                  <i class="fa fa-envelope fa-fw w3-padding-small w3-margin-left w3-right"></i><div class="w3-right-align">للاتصال بنا</div></a>
+    <a href="../PATH_TO_REF#root"    onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding ACTIVE_LIST_COLOR"><i class="fa fa-home     fa-fw w3-padding-small w3-margin-left w3-right"></i><div class="w3-right">الرئيسية</div> </a> 
+    <a href="../PATH_TO_REF#about"   onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding">                  <i class="fa fa-user     fa-fw w3-padding-small w3-margin-left w3-right"></i><div class="w3-right">مقدم المحتوى</div></a> 
+    <a href="../PATH_TO_REF#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding">                  <i class="fa fa-envelope fa-fw w3-padding-small w3-margin-left w3-right"></i><div class="w3-right">للاتصال بنا</div></a>
 }]
 # Note: icons of the list can be reviewed at
 # https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
@@ -93,14 +93,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
     <i class="fa fa-remove"></i>
     </a>
-    <img src="../000/shots/arabiclegacy_logo.png" style="width:45%;" class="w3-round"><br><br>
+    <img src="../000/shots/arabiclegacy_logo.png" style="width:45%;" class="w3-round"><br>
     <h3><b>إرث عربي</b></h3>
     <p class="w3-text-grey">ملفات شخصية</p>
   </div>
   <div class="w3-bar-block">
     <div class="w3-right">
     $sidebar_content
-      </div>
+    </div>
   </div>
   <div class="w3-panel w3-large">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -111,9 +111,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
+
+
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-right:20%">
-<img src="../000/shots/self_arab_cover.png" style="width:100%;" class="w3-round">
+<img src="../000/shots/self_arab_cover_lower.png" style="width:100%;" class="w3-round">
+
+<nav class="w3-bar w3-sand w3-border w3-padding-small" id="myHorzBar">
+    <img src="../000/shots/arabiclegacy_logo.png" style="width:5%;" class="w3-round w3-right w3-padding-small">
+    $sidebar_content
+</nav>
 
 $All_Content
 
