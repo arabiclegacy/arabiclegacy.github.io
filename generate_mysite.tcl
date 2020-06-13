@@ -32,7 +32,7 @@ set islamic_list [list MAIN_LIST \
   <a href="../PATH_TO_REF" onclick="w3_close()" class="w3-right w3-margin-left"> <div class="w3-right">ملفات إسلامية</div></a>
   <i class="fa fa-caret-down fa-fw w3-padding-small w3-right"></i>
 </button>
-<div id="demoAcc" class="w3-hide w3-white w3-container">
+<div id="demoAcc" class="w3-hide w3-container">
   SUB_LIST
 </div> }]
 
@@ -40,7 +40,7 @@ set islamic_list [list MAIN_LIST \
 set tajweed_list [list islamic_list \
  { <a href="../PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
-     <div class="w3-right-align">تجويد القرآن</div></a> } ]
+     <div class="w3-right">تجويد القرآن</div></a> } ]
 
 
 set sidebar_content ""
@@ -170,6 +170,9 @@ foreach {TargetFile InputFile NameInList} $include_pages {
   set CreatedFile [ open ${TargetFile} r ]
   set All_Content [read $CreatedFile]
   close $CreatedFile
+
+  set horz_bar_idx [string first "myHorzBar" $All_Content]
+  set All_Content [regsub -all -start $horz_bar_idx -- {demoAcc} $All_Content {demoAcc2}] 
 
   set CreatedFile [ open ${TargetFile} w+ ]
   set modified_Content [format {string map {"ACTIVE_%s_LIST_COLOR" "w3-text-teal"} $All_Content} $NameInList]
