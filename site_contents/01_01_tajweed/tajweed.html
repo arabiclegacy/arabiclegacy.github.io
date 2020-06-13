@@ -4,14 +4,20 @@
 </header>
 </p>
 <br>
+<div id="demo2"></div>
 
 <embed id="DesktopView" src="../site_contents/01_01_tajweed/DLV_Tajweed.pdf" width="800px" height="2100px" /> 
 
 
 <script>
-if (navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/)) {
+var txt2 = "";
+if (navigator.userAgent.match(/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/)) {
+txt2 += "moi: note that u are using Mobile"
 document.getElementById('DesktopView').src = 'https://docs.google.com/viewer?url=https://arabiclegacy.github.io/site_contents/01_01_tajweed/DLV_Tajweed.pdf&embedded=true';
+} else {
+txt2 += "moi: I cannot see any Mobile"
 }
+document.getElementById("demo2").innerHTML = txt2;
 </script>
 
 <!-- <embed src="../site_contents/01_01_tajweed/DLV_Tajweed.pdf" width="800px" height="2100px" /> -->
