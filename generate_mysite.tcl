@@ -8,6 +8,7 @@ puts "start $WelcomeString process ..."
 set include_pages [list \
 	000/home.html    site_contents/00_home/content_home.html   home_list \
 	002/tajweed.html    site_contents/01_01_tajweed/tajweed.html   tajweed_list \
+	003/paradigm.html    site_contents/01_02_paradigm/paradigm.html   paradigm_list \
 	001/islamic_home.html    site_contents/01_00_islamic/islamic_home.html   islamic_list \
 ]
 
@@ -41,6 +42,11 @@ set tajweed_list [list islamic_list \
  { <a href="../PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">تجويد القرآن</div></a> } ]
+
+set paradigm_list [list islamic_list \
+ { <a href="../PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+     <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
+     <div class="w3-right">النموذج المعرفي</div></a> } ]
 
 
 set sidebar_content ""
@@ -125,6 +131,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
 $All_Content
 
 <!-- End of PAGE CONTENT -->
+<div class="w3-bar w3-light-grey"> 
+<div class="w3-bar-item">Arabic Legacy - All Rights Reserved</div>
+</div>
+
 </div>
 
 
