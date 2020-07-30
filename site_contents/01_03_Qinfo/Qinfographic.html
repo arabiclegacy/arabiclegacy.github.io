@@ -1,0 +1,31 @@
+<p id="qinfo_id">
+<header>
+<h2>
+Quran Infographic
+</h2>
+</header>
+</p>
+<br>
+<img src="../site_contents/01_03_Qinfo/Quran_Infographic.png" style="width:100%;" class="w3-round">
+<br>
+
+
+
+<script>
+var txt2 = "";
+var txt5 = "";
+
+txt2 += 'في حالة عدم توافر متصفح لملفات  PDF يمكنك تحميل الملف من هذا الرابط: <a href="../site_contents/01_02_paradigm/cognitive_model.pdf" class="w3-text-blue">هنا</a>';
+
+if (navigator.userAgent.match(/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/)) {
+    txt5 += '<embed src="https://docs.google.com/viewer?url=https://arabiclegacy.github.io/site_contents/01_02_paradigm/cognitive_model.pdf&embedded=true" />';
+} else {
+    txt5 += '<embed src="../site_contents/01_02_paradigm/cognitive_model.pdf" width="800px" height="2100px" />';
+}
+
+document.getElementById("demo2").innerHTML += txt2;
+document.getElementById("demo5").innerHTML += txt5;
+</script>
+
+<!-- <embed src="../site_contents/01_01_tajweed/DLV_Tajweed.pdf" width="800px" height="2100px" /> -->
+
