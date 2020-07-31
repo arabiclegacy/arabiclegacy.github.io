@@ -102,7 +102,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174131781-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
+  window.dataLayer = window.dataLayer || \[\];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
