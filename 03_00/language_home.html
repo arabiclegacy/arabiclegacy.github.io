@@ -52,14 +52,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
 <div id="demoAcc" class="w3-hide w3-container">
    <a href="../002/tajweed.html" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_tajweed_list_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
-     <div class="w3-right">تجويد القرآن</div></a>   <a href="../003/paradigm.html" onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-text-teal">
+     <div class="w3-right">تجويد القرآن</div></a>   <a href="../003/paradigm.html" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_paradigm_list_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">النموذج المعرفي</div></a>   <a href="../004/qinfo.html" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_qinfo_list_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">Quran Infographic</div></a>  
 </div> 
  
-<button  onclick="myAccFunc('languageAcc')" class="w3-bar-item w3-button w3-right w3-padding ACTIVE_language_list_LIST_COLOR" >
+<button  onclick="myAccFunc('languageAcc')" class="w3-bar-item w3-button w3-right w3-padding w3-text-teal" >
   <i class="fa fa-book fa-fw w3-margin-left w3-padding-small w3-right"></i>
   <a href="../03_00/language_home.html" onclick="w3_close()" class="w3-right w3-margin-left"> <div class="w3-right">ملفات لغوية</div></a>
   <i class="fa fa-caret-down fa-fw w3-padding-small w3-right"></i>
@@ -103,14 +103,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
 <div id="demoAcc2" class="w3-hide w3-container">
    <a href="../002/tajweed.html" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_tajweed_list_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
-     <div class="w3-right">تجويد القرآن</div></a>   <a href="../003/paradigm.html" onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-text-teal">
+     <div class="w3-right">تجويد القرآن</div></a>   <a href="../003/paradigm.html" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_paradigm_list_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">النموذج المعرفي</div></a>   <a href="../004/qinfo.html" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_qinfo_list_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">Quran Infographic</div></a>  
 </div> 
  
-<button  onclick="myAccFunc('languageAcc2')" class="w3-bar-item w3-button w3-right w3-padding ACTIVE_language_list_LIST_COLOR" >
+<button  onclick="myAccFunc('languageAcc2')" class="w3-bar-item w3-button w3-right w3-padding w3-text-teal" >
   <i class="fa fa-book fa-fw w3-margin-left w3-padding-small w3-right"></i>
   <a href="../03_00/language_home.html" onclick="w3_close()" class="w3-right w3-margin-left"> <div class="w3-right">ملفات لغوية</div></a>
   <i class="fa fa-caret-down fa-fw w3-padding-small w3-right"></i>
@@ -123,37 +123,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
 
 </nav>
 
-<p id="paradigm_id">
-<header>
-<h2>
-دليل عملي للنموذج المعرفي
-</h2>
-</header>
+<p id="language_home">
+<h5>
+هذا الجزء يحتوي على الملفات التالية
+</h5>
 </p>
 <br>
-<div id="demo2"></div>
+<div class="w3-container w3-margin-bottom"> 
+<ul class="w3-ul w3-right w3-sand" style="width:100%;">
+  <a href="../03_01/synbucket.html">
+    <li><i class="fa fa-file-pdf-o w3-padding-small w3-right"></i>برنامج لحفظ ومراجعة مفردات لغوية</li>
+  </a>
+</ul>
+</div>
 <br>
-<div id="demo5"></div>
-
-
-
-<script>
-var txt2 = "";
-var txt5 = "";
-
-txt2 += 'في حالة عدم توافر متصفح لملفات  PDF يمكنك تحميل الملف من هذا الرابط: <a href="../site_contents/01_02_paradigm/cognitive_model.pdf" class="w3-text-blue">هنا</a>';
-
-if (navigator.userAgent.match(/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/)) {
-    txt5 += '<embed src="https://docs.google.com/viewer?url=https://arabiclegacy.github.io/site_contents/01_02_paradigm/cognitive_model.pdf&embedded=true" />';
-} else {
-    txt5 += '<embed src="../site_contents/01_02_paradigm/cognitive_model.pdf" width="800px" height="2100px" />';
-}
-
-document.getElementById("demo2").innerHTML += txt2;
-document.getElementById("demo5").innerHTML += txt5;
-</script>
-
-<!-- <embed src="../site_contents/01_01_tajweed/DLV_Tajweed.pdf" width="800px" height="2100px" /> -->
 
 
 

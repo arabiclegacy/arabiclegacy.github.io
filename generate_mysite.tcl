@@ -6,11 +6,13 @@ set WelcomeString "Generate Webpages"
 puts "start $WelcomeString process ..."
 
 set include_pages [list \
-	000/home.html    site_contents/00_home/content_home.html   home_list \
-	002/tajweed.html    site_contents/01_01_tajweed/tajweed.html   tajweed_list \
-	003/paradigm.html    site_contents/01_02_paradigm/paradigm.html   paradigm_list \
-	004/qinfo.html    site_contents/01_03_Qinfo/Qinfographic.html   qinfo_list \
+	000/home.html            site_contents/00_home/content_home.html   home_list \
+	002/tajweed.html         site_contents/01_01_tajweed/tajweed.html   tajweed_list \
+	003/paradigm.html        site_contents/01_02_paradigm/paradigm.html   paradigm_list \
+	004/qinfo.html           site_contents/01_03_Qinfo/Qinfographic.html   qinfo_list \
 	001/islamic_home.html    site_contents/01_00_islamic/islamic_home.html   islamic_list \
+	03_01/synbucket.html     site_contents/03_01/synbucket.html   synbucket_list \
+    03_00/language_home.html      site_contents/03_00_language/language_home.html  language_list\
 ]
 
 
@@ -18,9 +20,9 @@ set include_pages [list \
 
 set home_list [list MAIN_LIST \
 {
-    <a href="../PATH_TO_REF#root"    onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding ACTIVE_LIST_COLOR"><i class="fa fa-home     fa-fw w3-padding-small w3-margin-left w3-right"></i><div class="w3-right">الرئيسية</div> </a> 
-    <a href="../PATH_TO_REF#about"   onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding">                  <i class="fa fa-user     fa-fw w3-padding-small w3-margin-left w3-right"></i><div class="w3-right">مقدم المحتوى</div></a> 
-    <a href="../PATH_TO_REF#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding">                  <i class="fa fa-envelope fa-fw w3-padding-small w3-margin-left w3-right"></i><div class="w3-right">للاتصال بنا</div></a>
+    <a href="LEVEL/PATH_TO_REF#root"    onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding ACTIVE_LIST_COLOR"><i class="fa fa-home     fa-fw w3-padding-small w3-margin-left w3-right"></i><div class="w3-right">الرئيسية</div> </a> 
+    <a href="LEVEL/PATH_TO_REF#about"   onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding">                  <i class="fa fa-user     fa-fw w3-padding-small w3-margin-left w3-right"></i><div class="w3-right">مقدم المحتوى</div></a> 
+    <a href="LEVEL/PATH_TO_REF#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding">                  <i class="fa fa-envelope fa-fw w3-padding-small w3-margin-left w3-right"></i><div class="w3-right">للاتصال بنا</div></a>
 }]
 # Note: icons of the list can be reviewed at
 # https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
@@ -31,7 +33,7 @@ set islamic_list [list MAIN_LIST \
  { 
 <button  onclick="myAccFunc('demoAcc')" class="w3-bar-item w3-button w3-right w3-padding ACTIVE_LIST_COLOR" >
   <i class="fa fa-book fa-fw w3-margin-left w3-padding-small w3-right"></i>
-  <a href="../PATH_TO_REF" onclick="w3_close()" class="w3-right w3-margin-left"> <div class="w3-right">ملفات إسلامية</div></a>
+  <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-right w3-margin-left"> <div class="w3-right">ملفات إسلامية</div></a>
   <i class="fa fa-caret-down fa-fw w3-padding-small w3-right"></i>
 </button>
 <div id="demoAcc" class="w3-hide w3-container">
@@ -40,19 +42,38 @@ set islamic_list [list MAIN_LIST \
 
 
 set tajweed_list [list islamic_list \
- { <a href="../PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+ { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">تجويد القرآن</div></a> } ]
 
 set paradigm_list [list islamic_list \
- { <a href="../PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+ { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">النموذج المعرفي</div></a> } ]
 
 set qinfo_list [list islamic_list \
- { <a href="../PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+ { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">Quran Infographic</div></a> } ]
+
+
+
+set language_list [list MAIN_LIST \
+ { 
+<button  onclick="myAccFunc('languageAcc')" class="w3-bar-item w3-button w3-right w3-padding ACTIVE_LIST_COLOR" >
+  <i class="fa fa-book fa-fw w3-margin-left w3-padding-small w3-right"></i>
+  <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-right w3-margin-left"> <div class="w3-right">ملفات لغوية</div></a>
+  <i class="fa fa-caret-down fa-fw w3-padding-small w3-right"></i>
+</button>
+<div id="languageAcc" class="w3-hide w3-container">
+  SUB_LIST
+</div> }]
+
+
+set synbucket_list [list language_list \
+ { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+     <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
+     <div class="w3-right">Synbucket</div></a> } ]
 
 
 set sidebar_content ""
@@ -89,10 +110,10 @@ set CreatedFile_Content [subst {<!DOCTYPE html>
 <html dir="rtl" lang="ar">
 <head>
 <title>Arabic Legacy</title>
-<link rel="icon" href="../000/shots/arabiclegacy_logo.png">
+<link rel="icon" href="LEVEL/000/shots/arabiclegacy_logo.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../interface_css/w3.css">
+<link rel="stylesheet" href="LEVEL/interface_css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -119,7 +140,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
     <i class="fa fa-remove"></i>
     </a>
-    <img src="../000/shots/arabiclegacy_logo.png" style="width:45%;" class="w3-round"><br>
+    <img src="LEVEL/000/shots/arabiclegacy_logo.png" style="width:45%;" class="w3-round"><br>
     <h3><b>إرث عربي</b></h3>
     <p class="w3-text-grey">ملفات شخصية</p>
   </div>
@@ -141,10 +162,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-right:20%">
-<img src="../000/shots/self_arab_cover_lower.png" style="width:100%;" class="w3-round">
+<img src="LEVEL/000/shots/self_arab_cover_lower.png" style="width:100%;" class="w3-round">
 
 <nav class="w3-bar w3-sand w3-border w3-padding-small" id="myHorzBar">
-    <img src="../000/shots/arabiclegacy_logo.png" style="width:5%;" class="w3-round w3-right w3-padding-small">
+    <img src="LEVEL/000/shots/arabiclegacy_logo.png" style="width:5%;" class="w3-round w3-right w3-padding-small">
     $sidebar_content
 </nav>
 
@@ -205,9 +226,13 @@ foreach {TargetFile InputFile NameInList} $include_pages {
 
   set horz_bar_idx [string first "myHorzBar" $All_Content]
   set All_Content [regsub -all -start $horz_bar_idx -- {demoAcc} $All_Content {demoAcc2}] 
+  set All_Content [regsub -all -start $horz_bar_idx -- {languageAcc} $All_Content {languageAcc2}] 
+
+  set num_occur [expr {[llength [split $TargetFile {/}]] - 1}]
+  set up_lvl [string repeat {../} $num_occur]
 
   set CreatedFile [ open ${TargetFile} w+ ]
-  set modified_Content [format {string map {"ACTIVE_%s_LIST_COLOR" "w3-text-teal"} $All_Content} $NameInList]
+  set modified_Content [format {string map {"ACTIVE_%s_LIST_COLOR" "w3-text-teal" "LEVEL/" "%s"} $All_Content} $NameInList $up_lvl]
   set modified_Content [eval $modified_Content]
   set modified_Content [string map {"SUB_LIST" ""} $modified_Content]
 
