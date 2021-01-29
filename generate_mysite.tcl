@@ -182,7 +182,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-right:20%">
-<img src="LEVEL/site_contents/shots/self_arab_cover_lower.png" style="width:100%;" class="w3-round">
+<img src="LEVEL/site_contents/shots/arabiclegacy_fb_cover.png" style="width:100%;" class="w3-round">
 
 <nav class="w3-bar w3-sand w3-border w3-padding-small" id="myHorzBar">
     <img src="LEVEL/site_contents/shots/arabiclegacy_logo.png" style="width:5%;" class="w3-round w3-right w3-padding-small">
