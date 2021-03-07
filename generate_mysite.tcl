@@ -11,9 +11,10 @@ set include_pages [list \
 	003/paradigm.html                       site_contents/01_02_paradigm.html                 paradigm_list \
 	004/qinfo.html                          site_contents/01_03_Qinfographic.html             qinfo_list \
 	001/islamic_home.html                   site_contents/01_00_islamic_home.html             islamic_list \
-	03_01/synbucket.html                    site_contents/03_01_synbucket.html                synbucket_list \
-    03_00/language_home.html                site_contents/03_00_language_home.html            language_list\
-    engineering/importantintegrations.html  site_contents/02_01_importantintegration.html    integration_list\
+	language/synbucket.html                 site_contents/03_01_synbucket.html                synbucket_list \
+	language/GrammatikOverview.html         site_contents/03_02_Grammatik_Overview.html       D_Overview_list \
+    language/language_home.html             site_contents/03_00_language_home.html            language_list\
+    engineering/importantintegrations.html  site_contents/02_01_importantintegration.html     integration_list\
     engineering/eng_home.html               site_contents/02_00_engineering_home.html         engineering_list\
 ]
 
@@ -76,6 +77,11 @@ set synbucket_list [list language_list \
  { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">Synbucket</div></a> } ]
+
+set D_Overview_list [list language_list \
+ { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+     <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
+     <div class="w3-right">Grammatik Übersicht</div></a> } ]
 
 
 set engineering_list [list MAIN_LIST \
