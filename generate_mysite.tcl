@@ -13,6 +13,7 @@ set include_pages [list \
 	001/islamic_home.html                   site_contents/01_00_islamic_home.html             islamic_list \
 	language/synbucket.html                 site_contents/03_01_synbucket.html                synbucket_list \
 	language/GrammatikOverview.html         site_contents/03_02_Grammatik_Overview.html       D_Overview_list \
+	language/GrammatikVerben.html           site_contents/03_03_Grammatik_Verben.html         D_Verben_list \
     language/language_home.html             site_contents/03_00_language_home.html            language_list\
     engineering/importantintegrations.html  site_contents/02_01_importantintegration.html     integration_list\
     engineering/eng_home.html               site_contents/02_00_engineering_home.html         engineering_list\
@@ -82,6 +83,11 @@ set D_Overview_list [list language_list \
  { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">Grammatik Übersicht</div></a> } ]
+
+set D_Verben_list [list language_list \
+ { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+     <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
+     <div class="w3-right">Grammatik Verben</div></a> } ]
 
 
 set engineering_list [list MAIN_LIST \
