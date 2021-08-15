@@ -18,6 +18,7 @@ set include_pages [list \
 	language/GrammatikArtikel.html          site_contents/03_05_Grammatik_Artikel.html        D_Artikel_list \
 	language/GrammatikPronomen.html         site_contents/03_06_Grammatik_Pronomen.html       D_Pronomen_list \
 	language/GrammatikAdjektiv.html         site_contents/03_07_Grammatik_Adjektiv.html       D_Adjektiv_list \
+	language/GrammatikAdverb.html           site_contents/03_08_Grammatik_Adverb.html         D_Adverb_list \
     language/language_home.html             site_contents/03_00_language_home.html            language_list\
     engineering/importantintegrations.html  site_contents/02_01_importantintegration.html     integration_list\
     engineering/eng_home.html               site_contents/02_00_engineering_home.html         engineering_list\
@@ -112,6 +113,11 @@ set D_Adjektiv_list [list language_list \
  { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">Grammatik Adjektiv</div></a> } ]
+
+set D_Adverb_list [list language_list \
+ { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+     <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
+     <div class="w3-right">Grammatik Adverb</div></a> } ]
 
 
 set engineering_list [list MAIN_LIST \
