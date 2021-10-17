@@ -21,6 +21,7 @@ set include_pages [list \
 	language/GrammatikAdverb.html           site_contents/03_08_Grammatik_Adverb.html         D_Adverb_list \
 	language/GrammatikPreposition.html      site_contents/03_09_Grammatik_Preposition.html    D_Prepos_list \
 	language/GrammatikKonjunktion.html      site_contents/03_10_Grammatik_Konjunktion.html    D_Konjunk_list \
+	language/GrammatikSatz.html             site_contents/03_11_Grammatik_Satz.html           D_Satz_list \
     language/language_home.html             site_contents/03_00_language_home.html            language_list\
     engineering/importantintegrations.html  site_contents/02_01_importantintegration.html     integration_list\
     engineering/eng_home.html               site_contents/02_00_engineering_home.html         engineering_list\
@@ -130,6 +131,11 @@ set D_Konjunk_list [list language_list \
  { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">Grammatik Konjunktionen</div></a> } ]
+
+set D_Satz_list [list language_list \
+ { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+     <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
+     <div class="w3-right">Grammatik Satz</div></a> } ]
 
 
 set engineering_list [list MAIN_LIST \
