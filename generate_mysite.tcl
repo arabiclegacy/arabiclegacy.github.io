@@ -11,6 +11,8 @@ set include_pages [list \
 	islamic/paradigm.html                   site_contents/01_02_paradigm.html                 paradigm_list \
 	islamic/qinfo.html                      site_contents/01_03_Qinfographic.html             qinfo_list \
 	islamic/islamic_home.html               site_contents/01_00_islamic_home.html             islamic_list \
+    engineering/importantintegrations.html  site_contents/02_01_importantintegration.html     integration_list\
+    engineering/eng_home.html               site_contents/02_00_engineering_home.html         engineering_list\
 	language/synbucket.html                 site_contents/03_01_synbucket.html                synbucket_list \
 	language/GrammatikOverview.html         site_contents/03_02_Grammatik_Overview.html       D_Overview_list \
 	language/GrammatikVerben.html           site_contents/03_03_Grammatik_Verben.html         D_Verben_list \
@@ -27,8 +29,8 @@ set include_pages [list \
 	language/D_woerter.html                 site_contents/03_14_Woerter_1000.html             D_Woerter_list \
 	language/MamnooSarf.html                site_contents/03_15_Nahw_Mamno3Sarf.html          D_MamnooSarf_list \
     language/language_home.html             site_contents/03_00_language_home.html            language_list\
-    engineering/importantintegrations.html  site_contents/02_01_importantintegration.html     integration_list\
-    engineering/eng_home.html               site_contents/02_00_engineering_home.html         engineering_list\
+    misce/AutosFahren.html                  site_contents/04_01_Autos_Fahren_Deu.html         AutoFahren_list\
+    misce/misce_home.html                   site_contents/04_00_misce_home.html               misce_list\
 ]
 
 
@@ -178,6 +180,26 @@ set integration_list [list engineering_list \
  { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">32 تكاملات مهمة</div></a> } ]
+
+
+
+set misce_list [list MAIN_LIST \
+ { 
+<button  onclick="myAccFunc('misceAcc')" class="w3-bar-item w3-button w3-right w3-padding ACTIVE_LIST_COLOR" >
+  <i class="fa fa-book fa-fw w3-margin-left w3-padding-small w3-right"></i>
+  <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-right w3-margin-left"> <div class="w3-right">ملفات متنوعة</div></a>
+  <i class="fa fa-caret-down fa-fw w3-padding-small w3-right"></i>
+</button>
+<div id="misceAcc" class="w3-hide w3-container">
+  SUB_LIST
+</div> }]
+
+
+set AutoFahren_list [list misce_list \
+ { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+     <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
+     <div class="w3-right">قيادة السيارات في ألمانيا</div></a> } ]
+
 
 
 set sidebar_content ""
@@ -359,6 +381,7 @@ foreach {TargetFile InputFile NameInList} $include_pages {
   set All_Content [regsub -all -start $horz_bar_idx -- {demoAcc} $All_Content {demoAcc2}] 
   set All_Content [regsub -all -start $horz_bar_idx -- {languageAcc} $All_Content {languageAcc2}] 
   set All_Content [regsub -all -start $horz_bar_idx -- {engineeringAcc} $All_Content {engineeringAcc2}] 
+  set All_Content [regsub -all -start $horz_bar_idx -- {misceAcc} $All_Content {misceAcc2}] 
 
   set num_occur [expr {[llength [split $TargetFile {/}]] - 1}]
   set up_lvl [string repeat {../} $num_occur]
