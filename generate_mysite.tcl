@@ -10,6 +10,7 @@ set include_pages [list \
 	islamic/tajweed.html                    site_contents/01_01_tajweed.html                  tajweed_list \
 	islamic/paradigm.html                   site_contents/01_02_paradigm.html                 paradigm_list \
 	islamic/qinfo.html                      site_contents/01_03_Qinfographic.html             qinfo_list \
+	islamic/hajjinfo.html                   site_contents/01_04_HajjInfographic.html          hajjinfo_list \
 	islamic/islamic_home.html               site_contents/01_00_islamic_home.html             islamic_list \
     engineering/importantintegrations.html  site_contents/02_01_importantintegration.html     integration_list\
     engineering/eng_home.html               site_contents/02_00_engineering_home.html         engineering_list\
@@ -73,6 +74,11 @@ set qinfo_list [list islamic_list \
  { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">Quran Infographic</div></a> } ]
+
+set hajjinfo_list [list islamic_list \
+ { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+     <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
+     <div class="w3-right">Hajj Infographic</div></a> } ]
 
 
 
