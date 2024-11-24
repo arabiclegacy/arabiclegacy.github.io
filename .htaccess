@@ -1,0 +1,5 @@
+# Block the following countries
+# Countries code list https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste
+GeoIPEnable On
+SetEnvIf GEOIP_COUNTRY_CODE IL BlockCountry
+Deny from env=BlockCountry
