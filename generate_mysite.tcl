@@ -7,6 +7,7 @@ puts "start $WelcomeString process ..."
 
 set include_pages [list \
 	000/home.html                           site_contents/00_home/content_home.html           home_list \
+	000/priv_pol.html                       site_contents/00_home/privacy_policy.html         policy_list \
 	islamic/tajweed.html                    site_contents/01_01_tajweed.html                  tajweed_list \
 	islamic/paradigm.html                   site_contents/01_02_paradigm.html                 paradigm_list \
 	islamic/qinfo.html                      site_contents/01_03_Qinfographic.html             qinfo_list \
@@ -45,6 +46,10 @@ set home_list [list MAIN_LIST \
 }]
 # Note: icons of the list can be reviewed at
 # https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
+
+# set policy_list [list {priv list}]
+set policy_list ""
+
 
 
 
@@ -295,6 +300,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
 $All_Content
 
 <!-- End of PAGE CONTENT -->
+<a href="LEVEL/000/priv_pol.html">
+<div class="w3-container w3-teal" align="left">
+   Privacy Policy 
+</div>
+</a>
 <div class="w3-bar w3-light-grey"> 
 <div class="w3-bar-item">Arabic Legacy - All Rights Reserved</div>
 </div>
