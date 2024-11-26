@@ -47,7 +47,6 @@ set home_list [list MAIN_LIST \
 # Note: icons of the list can be reviewed at
 # https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
 
-# set policy_list [list {priv list}]
 set policy_list ""
 
 
@@ -319,13 +318,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
 $All_Content
 
 <!-- End of PAGE CONTENT -->
-<a href="LEVEL/000/priv_pol.html">
-<div class="w3-container w3-teal" align="left">
-   Privacy Policy 
-</div>
-</a>
 <div class="w3-bar w3-light-grey"> 
-<div class="w3-bar-item">Arabic Legacy - All Rights Reserved</div>
+  <a href="LEVEL/000/priv_pol.html">
+    <div class="w3-container w3-teal" align="left">
+      Privacy Policy 
+    </div>
+  </a>
+</div>
+<div class="w3-bar w3-light-grey"> 
+  <div class="w3-bar-item">Arabic Legacy - All Rights Reserved</div>
 </div>
 
 </div>
