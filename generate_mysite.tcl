@@ -256,31 +256,7 @@ set CreatedFile_Content [subst {<!DOCTYPE html>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
 </style>
 
-<!--
-<script>
-  (function(d, s, id, w, f){
-      w\[f\] = w\[f\] || function() {
-          (w\[f\].q = w\[f\].q || \[\]).push(arguments)
-      };
-      var js, fjs = d.getElementsByTagName(s)\[0\];
-      if (d.getElementById(id)){ return; }
-      js = d.createElement(s); js.id = id;
-      js.onload = function(){
-          document.dispatchEvent(new Event('tbScriptLoaded'));
-      };
-      js.async = true;
-      js.src = "https://cdn.trackboxx.info/p/tracker.js";
-      fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'trackboxx-script', window, 'trackboxx'));
-  trackboxx('set', 'siteId', 'TB-15643061');
-  trackboxx('trackPageview');
-</script>
--->
 
-
-<!-- script for simpleanalytics but should be removed -->
-<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
 
 
 </head>
@@ -320,6 +296,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Amiri}
     <img src="LEVEL/site_contents/shots/arabiclegacy_logo.png" style="width:5%;" class="w3-round w3-right w3-padding-small">
     $sidebar_content
 </nav>
+
+<div class="w3-left w3-padding">
+PLACEHOLDER_FOR_COFFEE
+</div>
+
+<div class="w3-container">
+</div>
 
 $All_Content
 
@@ -387,6 +370,23 @@ close $CreatedFile
 
 }
 
+set BUYMECOFFEE_Text { 
+    <script type="text/javascript" 
+        src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+        data-name="bmc-button" 
+        data-slug="arabiclegacy" 
+        data-color="#e0e1e0" 
+        data-emoji="☕"  
+        data-font="Cookie" 
+        data-text="Buy me a coffee" 
+        data-outline-color="#000000" 
+        data-font-color="#000000" 
+        data-coffee-color="#FFDD00" >
+    </script> 
+}
+
+set BUYMECOFFEE_Text_2 {COFFEE_ICON}
+
 foreach {TargetFile InputFile NameInList} $include_pages {
   set CreatedFile [ open ${TargetFile} r ]
   set All_Content [read $CreatedFile]
@@ -406,9 +406,16 @@ foreach {TargetFile InputFile NameInList} $include_pages {
   set modified_Content [eval $modified_Content]
   set modified_Content [string map {"SUB_LIST" ""} $modified_Content]
 
+  if { [string match "islamic*" $TargetFile] } {
+    set modified_Content [string map {"PLACEHOLDER_FOR_COFFEE" " " } $modified_Content]
+  } else {
+    set modified_Content [string map [ list "PLACEHOLDER_FOR_COFFEE" "$BUYMECOFFEE_Text" ] $modified_Content]
+  }
+
   puts $CreatedFile $modified_Content
 
   close $CreatedFile
+  
 }
 
 
