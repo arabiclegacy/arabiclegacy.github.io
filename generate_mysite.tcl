@@ -12,6 +12,7 @@ set include_pages [list \
 	islamic/paradigm.html                   site_contents/01_02_paradigm.html                 paradigm_list \
 	islamic/qinfo.html                      site_contents/01_03_Qinfographic.html             qinfo_list \
 	islamic/hajjinfo.html                   site_contents/01_04_HajjInfographic.html          hajjinfo_list \
+	islamic/REMA_Summary.html               site_contents/01_05_REMA_Summary.html             rema_sum_list \
 	islamic/islamic_home.html               site_contents/01_00_islamic_home.html             islamic_list \
     engineering/importantintegrations.html  site_contents/02_01_importantintegration.html     integration_list\
     engineering/eng_home.html               site_contents/02_00_engineering_home.html         engineering_list\
@@ -32,6 +33,7 @@ set include_pages [list \
 	language/MamnooSarf.html                site_contents/03_15_Nahw_Mamno3Sarf.html          D_MamnooSarf_list \
     language/language_home.html             site_contents/03_00_language_home.html            language_list\
     misce/AutosFahren.html                  site_contents/04_01_Autos_Fahren_Deu.html         AutoFahren_list\
+    misce/AutosSystems.html                 site_contents/04_02_Autos_Systems.html            AutoSystem_list\
     misce/misce_home.html                   site_contents/04_00_misce_home.html               misce_list\
 ]
 
@@ -83,6 +85,11 @@ set hajjinfo_list [list islamic_list \
  { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">Hajj Infographic</div></a> } ]
+
+set rema_sum_list [list islamic_list \
+ { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+     <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
+     <div class="w3-right">تلخيص كتاب رحلة إلى معرفة الله</div></a> } ]
 
 
 
@@ -209,6 +216,12 @@ set AutoFahren_list [list misce_list \
  { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
      <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
      <div class="w3-right">قيادة السيارات في ألمانيا</div></a> } ]
+
+
+set AutoSystem_list [list misce_list \
+ { <a href="LEVEL/PATH_TO_REF" onclick="w3_close()" class="w3-bar-item w3-button w3-right ACTIVE_LIST_COLOR">
+     <i class="fa fa-file-o fa-fw w3-padding-small w3-margin-left w3-right"></i>
+     <div class="w3-right">نظم السيارات</div></a> } ]
 
 
 
